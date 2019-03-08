@@ -36,7 +36,7 @@ class MainPagerScreen(
         return view
     }
 
-    override fun viewPagerListener(): ViewPager.SimpleOnPageChangeListener {
+    override fun viewPagerSimpleListener(): ViewPager.SimpleOnPageChangeListener {
         return object : ViewPager.SimpleOnPageChangeListener() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
