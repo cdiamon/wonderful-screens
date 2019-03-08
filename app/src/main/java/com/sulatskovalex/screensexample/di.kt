@@ -22,36 +22,36 @@ import com.sulatskovalex.screensexample.start_main.MainScreen
 import org.koin.dsl.module.module
 
 val mainModule = module {
-  single { Router() }
+    single { Router() }
 
-  screen(MainScreen.Tag) { MainScreen(get()) }
-  presenter { MainPresenter(get()) }
+    screen(MainScreen.Tag) { MainScreen(get()) }
+    presenter { MainPresenter(get()) }
 
-  /**
-   * Container
-   */
-  screen(MainContainerScreen.Tag) { MainContainerScreen(get()) }
-  presenter { MainContainerPresenter(get()) }
+    /**
+     * Container
+     */
+    screen(MainContainerScreen.Tag) { MainContainerScreen(get()) }
+    presenter { MainContainerPresenter(get()) }
 
-  screen(ContainerFirstScreen.Tag) { ContainerFirstScreen(get()) }
-  presenter { ContainerFirstPresenter(get()) }
+    screen(ContainerFirstScreen.Tag) { ContainerFirstScreen(get()) }
+    presenter { ContainerFirstPresenter(get()) }
 
-  screen(ContainerSecondScreen.Tag) { ContainerSecondScreen(get()) }
-  presenter { ContainerSecondPresenter(get()) }
+    screen(ContainerSecondScreen.Tag) { ContainerSecondScreen(get()) }
+    presenter { ContainerSecondPresenter(get()) }
 
-  /**
-   * ViewPager
-   */
-  screen(MainPagerScreen.Tag) { MainPagerScreen(get()) }
-  presenter { MainPagerPresenter(get()) }
+    /**
+     * ViewPager
+     */
+    screen(MainPagerScreen.Tag) { MainPagerScreen(get()) }
+    presenter { MainPagerPresenter(get()) }
 
-  screen(PageFirstScreen.Tag) { PageFirstScreen(get()) }
-  presenter { PageFirstPresenter(get()) }
+    screen(PageFirstScreen.Tag) { PageFirstScreen(get()) }
+    presenter { PageFirstPresenter(get()) }
 
-  screen(PageSecondScreen.Tag) { PageSecondScreen(get()) }
-  presenter { PageSecondPresenter(get()) }
+    screen(PageSecondScreen.Tag) { PageSecondScreen(get()) }
+    presenter { PageSecondPresenter(get()) }
 
-  screen(PageThirdScreen.Tag) { PageThirdScreen(get()) }
-  presenter { PageThirdPresenter(get()) }
+    screen(PageThirdScreen.Tag) { PageThirdScreen(get()) }
+    presenter { PageThirdPresenter(get()) }
 
 }

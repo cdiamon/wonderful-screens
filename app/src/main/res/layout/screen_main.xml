@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical"
     android:gravity="center_horizontal">
 
-  <Button
-      android:id="@+id/forward"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_margin="16dp"
-      android:padding="16dp"
-      android:text="forward this screen" />
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:text="forward this screen" />
 
-  <Button
-      android:id="@+id/forwardContainer"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:padding="16dp"
-      android:layout_margin="16dp"
-      android:text="forward container screen" />
+    <Button
+        android:id="@+id/forwardContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:text="forward container screen" />
 
-  <Button
-      android:id="@+id/forwardPager"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:padding="16dp"
-      android:layout_margin="16dp"
-      android:text="forward pager screen" />
+    <Button
+        android:id="@+id/forwardPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:text="forward pager screen" />
 
-  <Button
-      android:id="@+id/setRoot"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_margin="16dp"
-      android:padding="16dp"
-      android:text="set root pager screen" />
+    <Button
+        android:id="@+id/setRoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:text="set root pager screen" />
 
 </LinearLayout>

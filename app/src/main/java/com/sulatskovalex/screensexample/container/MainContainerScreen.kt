@@ -11,18 +11,18 @@ import kotlinx.android.synthetic.main.screen_container.view.*
 class MainContainerScreen(
         presenter: MainContainerPresenter,
         override val screenTag: String = Tag)
-  : ContainerScreen<MainContainerScreen, MainContainerPresenter>(presenter) {
+    : ContainerScreen<MainContainerScreen, MainContainerPresenter>(presenter) {
 
-  companion object {
-    const val Tag = "CONTAINER_SCREEN_MAIN"
-  }
+    companion object {
+        const val Tag = "CONTAINER_SCREEN_MAIN"
+    }
 
-  override val firstScreenArg = Any()
-  override val firstScreenTag: String = ContainerFirstScreen.Tag
+    override val firstScreenArg = Any()
+    override val firstScreenTag: String = ContainerFirstScreen.Tag
 
-  override fun createViewWithContainer(inflater: LayoutInflater, parent: ViewGroup): View =
-      inflater.inflate(R.layout.screen_container, parent, false)
+    override fun createViewWithContainer(inflater: LayoutInflater, parent: ViewGroup): View =
+            inflater.inflate(R.layout.screen_container, parent, false)
 
-  override fun container(createdView: View): ViewGroup = createdView.container
+    override fun container(createdView: View): ViewGroup = createdView.container
 
 }

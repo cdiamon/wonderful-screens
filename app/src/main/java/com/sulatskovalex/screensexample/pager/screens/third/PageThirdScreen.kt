@@ -9,12 +9,12 @@ import com.sulatskovalex.screensexample.R
 class PageThirdScreen(
         presenter: PageThirdPresenter,
         override val screenTag: String = Tag)
-  : Screen<PageThirdScreen, PageThirdPresenter>(presenter) {
+    : Screen<PageThirdScreen, PageThirdPresenter>(presenter) {
 
-  companion object {
-    const val Tag = "PAGE_SCREEN_THIRD"
-  }
+    companion object {
+        const val Tag = "PAGE_SCREEN_THIRD"
+    }
 
-  override fun createView(inflater: LayoutInflater, parent: ViewGroup): View =
-      inflater.inflate(R.layout.screen_page_third, parent, false)
+    override fun createView(inflater: LayoutInflater, parent: ViewGroup): View =
+            inflater.inflate(R.layout.screen_page_third, parent, false)
 }
